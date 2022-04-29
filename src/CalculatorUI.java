@@ -227,18 +227,18 @@ public class CalculatorUI {
             System.out.println("The division of "+intVal1+" and " +intVal2+ " is " + Calculator.divide(intVal1, intVal2));
         } else if(ui == 2){
             System.out.println("Enter your first float value");
-            float floatVal1 = scanner.nextInt();
+            float floatVal1 = scanner.nextFloat();
 
             System.out.println("Enter your second float value");
-            float floatVal2 = scanner.nextInt();
+            float floatVal2 = scanner.nextFloat();
 
             System.out.println("The division of "+floatVal1+" and " +floatVal2+ " is " + Calculator.divide(floatVal1, floatVal2));
         } else if(ui == 3){
             System.out.println("Enter your first double value");
-            float doubleVal1 = scanner.nextInt();
+            double doubleVal1 = scanner.nextDouble();
 
             System.out.println("Enter your second double value");
-            float doubleVal2 = scanner.nextInt();
+            double doubleVal2 = scanner.nextDouble();
 
             System.out.println("The division of "+doubleVal1+" and " +doubleVal2+ " is " + Calculator.divide(doubleVal1, doubleVal2));
         }
