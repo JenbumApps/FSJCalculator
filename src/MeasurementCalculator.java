@@ -4,7 +4,7 @@ public class MeasurementCalculator {
      * @param value
      * @return square of the given value
      */
-    public static double square(double value) {
+    public static long square(long value) {
         return value * value;
     }
 
@@ -13,8 +13,8 @@ public class MeasurementCalculator {
      * @param value
      * @return cube of the given value
      */
-    public static double cube(double value) {
-        return value * value * value;
+    public static long cube(long value) {
+        return square(value) * value;
     }
 
     /**
@@ -23,7 +23,7 @@ public class MeasurementCalculator {
      * @param breadth of rectangle
      * @return area of given rectangle (length * breadth)
      */
-    public static double area(double length, double breadth) {
+    public static long area(long length, long breadth) {
         return length * breadth;
     }
 
@@ -34,7 +34,7 @@ public class MeasurementCalculator {
      * @param breadth of rectangle
      * @return perimeter of given rectangle 2*(length + breadth)
      */
-    public static double perimeter(double length, double breadth) {
+    public static long perimeter(long length, long breadth) {
         return 2 * (length + breadth);
     }
 
@@ -47,7 +47,7 @@ public class MeasurementCalculator {
         for(int i=1; i<=100; i++) {
 
             if(i%2!=0)
-                System.out.println(i);
+                System.out.print(i+", ");
         }
 
         System.out.println("---------- End ---------");
